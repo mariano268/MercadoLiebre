@@ -23,18 +23,19 @@
 
 .navbar ul
 {  
-    display: flex;
-    flex-wrap: nowrap;
     list-style: none;
-    font-size: 10px;
-    margin: 15px;
+    font-size: 16px;
 }
 
 .navbar ul a
 {
-    margin: 10px;
-    color: #666;
+    color: #000000;
     text-decoration: none;
+}
+
+.p-header {
+    width: 100%;
+    text-align: center;
 }
 
 a:link { 
@@ -62,20 +63,20 @@ a:visited {
 }
 
 .articulos {
-    width: 95%;
-    margin-left: 2.5%;
+    width: 88%;
+    margin-left: 6%;
     background-color: #FFFFFF;
     padding-top: 2%;
     padding-bottom: 2%;
-    margin-bottom: 2%;
-    margin-top: 2%;
+    margin-bottom: 6%;
+    margin-top: 6%;
 }
 
 
 .h2-titulares {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    margin-left: 2.5%;
+    margin-left: 6%;
 }
 
 .imagenes {
@@ -111,24 +112,26 @@ a:visited {
 
 .footer-section {
     width: 100%;
-    margin-top: 3%;
+    margin-top: 10%;
     align-content: center;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: #666;
     font-size: 14px;
     background-color: #FFFFFF;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .footer {
     background-color: #FFFFFF;
-    margin-top: 3%;
-    padding: 3%;
+    margin-top: 5%;
+    padding: 3% 0%;
 }
 
 .h2-footer {
     color: #666;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     padding: 0%;
     margin-block-start: 0;
@@ -138,14 +141,16 @@ a:visited {
 .p-footer {
     margin-block-start: 0;
     margin-block-end: 0;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .h3-footer {
     width: 100%;
-    font-size: 11px;
+    font-size: 10px;
+    margin-top: 10%;
+    padding-left: 5%;
     color: #666;
     align-content: center;
-    text-align: center;
+    text-align: left;
     font-family: 'Roboto', sans-serif;
 }
