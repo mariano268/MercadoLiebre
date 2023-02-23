@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Entregable DigitalHouse, Web MercadiLiebre",
   "main": "app.js",
+  
   "scripts": {
-    "test": "nodemon src/app.js",
-    "start": "node src/app.js"
+    "test": "nodemon app.js",
+    "start": "node app.js"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mariano268/Modulo4-Entregable.git"
@@ -16,6 +18,7 @@
   "bugs": {
     "url": "https://github.com/mariano268/Modulo4-Entregable/issues"
   },
+
   "homepage": "https://github.com/mariano268/Modulo4-Entregable#readme",
   "dependencies": {
     "express": "^4.18.2",
