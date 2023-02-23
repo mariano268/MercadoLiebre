@@ -2,7 +2,9 @@ const express = require('express');
 const path = require('path')
 const app = express();
 
-app.listen (3000, () => { console.log ("Levantando un servidor con Express en puerto 3000")} );
+const port = process.env.PORT || 3001;
+
+app.listen (port, () => console.log ("Servidor corriendo en el puerto ${port}") );
 
 const publicPath = path.join(__dirname, "/MercadoLiebre/public")
 
