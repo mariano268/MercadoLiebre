@@ -50,7 +50,11 @@ a:visited {
     width: 50%;
     padding: 5%;
 }
-
+.secciones {
+    width: 100%;
+    padding: 0% 2%;
+    display: flex;
+}
 .burger-menu
 {         
     color: #ebebeb;
@@ -63,23 +67,33 @@ a:visited {
 }
 
 .articulos {
-    width: 88%;
-    margin-left: 6%;
+    width:25%;
+    margin-left: 2%;
+    margin-right: 2%;
     background-color: #FFFFFF;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-bottom: 6%;
-    margin-top: 6%;
+    padding-top: 1%;
+    padding-bottom: 0;
+    margin-bottom: 1%;
+    margin-top: 1%;
     border-radius: 3px;
     box-shadow: 0px 0px 10px #666;
+}
 
+.subarticulo {
+    border-width: 1px;
+    border-color: #ebebeb;
+    border-style: solid;
 }
 
 
 .h2-titulares {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    margin-left: 6%;
+    margin-left: 0%;
+    width: 100%;
+    display: flex;
+    margin-block-start: 1%;
+    margin-block-end: 1%;
 }
 
 .imagenes {
@@ -87,9 +101,33 @@ a:visited {
     margin-left: 5%;
 }
 
+.camion-container
+{
+    position: relative;
+    align-content: center;
+    text-align: center;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 35px;
+    height: 35px;
+    right: 10px;
+    margin-top: -15px;
+    margin-left: 85%;
+    transition: all 1000ms;
+}
+
+.camion-container i
+{
+    color: #39b54a; 
+    transform: translateY(50%);
+    margin: 0 0 0 3px;
+}
+
 .descuentos {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    color: #39b54a;
     margin-left: 5%;
 }
 
@@ -156,4 +194,39 @@ a:visited {
     align-content: center;
     text-align: left;
     font-family: 'Roboto', sans-serif;
+}
+
+
+@media (min-width: 361px) 
+{
+    
+    .articulos:hover>.camion-container
+    {
+        transform: rotate(-90deg);
+    }
+}
+
+@media (min-width: 768px)
+{
+    .body
+    {
+        padding-bottom: 565px;
+    }
+
+    .logo
+    {
+        width: 20%;
+    }
+
+    .burger-menu
+    {
+        display: none;
+    }
+
+    .navbar
+    {
+        display: flex; 
+        justify-content: space-around;
+    }
+
 }
