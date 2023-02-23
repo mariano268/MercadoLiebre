@@ -43,12 +43,7 @@
     text-decoration: none;
 }
 
-.busqueda {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    padding-left: 2%;
-}
+
 
 .p-header {
     width: 100%;
@@ -64,7 +59,7 @@ a:visited {
 }
 
 .logo {
-    width: 250px;
+    width: 50%;
     padding: 5% 2%;
 }
 
@@ -123,6 +118,40 @@ a:visited {
     margin-left: 5%;
 }
 
+input[type=search] {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+.busqueda {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 2%;
+    position: relative;
+}
+
+.cuotas {
+    display: flex;
+    width: 100%;
+}
+
+.botonbusqueda {
+    position: absolute;
+    right: 10%;
+    margin-top: 1%;
+    background-color: #FFFFFF;
+    height: 90%;
+    border-color: #FFFFFF;
+    border-style: none;
+    border-width: 0;
+    border-radius: 10px;
+}
+
 .camion-container
 {
     position: absolute;
@@ -134,8 +163,16 @@ a:visited {
     width: 35px;
     height: 35px;
     right: 10%;
-    top: -15%;
+    top: -26%;
     transition: all 1000ms;
+}
+
+.HeaderContainter {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .camion-container i
@@ -150,12 +187,18 @@ a:visited {
     font-size: 16px;
     color: #39b54a;
     margin-left: 5%;
+    margin-block-start: 4%;
+    margin-block-end: 1%;
+    padding: 0;
 }
 
 .precios {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 5%;
+    margin-block-start: 4%;
+    margin-block-end: 1%;
+    padding: 0;
 }
 
 .descripcion {
@@ -211,6 +254,12 @@ a:visited {
     font-size: 11px;
 }
 
+.MismoRenglon {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .h3-footer {
     width: 100%;
     font-size: 10px;
@@ -229,6 +278,8 @@ a:visited {
     {
         display: flex; 
         justify-content: space-around;
+        flex-direction: row;
+
     }
 
     .burger-menu
@@ -263,14 +314,77 @@ a:visited {
     {
         transform: rotate(-90deg);
     }
+
+    .logo {
+        width: 33%;
+        padding: 5% 2%;
+    }
+
+    input[type=search] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        resize: vertical;
+    }
+
+    .form {
+        width: 85%;
+        display: flex;
+        align-items: left;
+    }
+
+    .busqueda {
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 2%;
+        position: relative;
+    }
+    
+    .botonbusqueda {
+        position: absolute;
+        right: 0%;
+        margin-top: 0.5%;
+        background-color: #FFFFFF;
+        height: 90%;
+        border-color: #FFFFFF;
+        border-style: none;
+        border-width: 0;
+        border-radius: 10px;
+    }
+
+    .cuotas {
+        display: flex;
+        width: 30%;
+    }
+
+    .navbar li {
+        margin-left: 4%;
+    } 
+
+    .vinculos-izq {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 50%;
+    }
+    .vinculos-der {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 50%;
+        padding-right: 4%;
+    }
 }
 
 
 @media (min-width: 768px)
 {
-    .logo
-    {
-        padding: 1%;
+    .logo {
+        width: 33%;
+        padding: 1% 5%;
     }
 
     .h2-titulares {
