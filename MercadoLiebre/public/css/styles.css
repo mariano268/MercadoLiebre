@@ -357,6 +357,27 @@ input[type=search] {
     background-color: #0022AA;
 }
 
+.articulos:hover>.subarticulo>.camion-container
+{
+    transform: rotate(-90deg);
+}
+
+.articulos:hover>.subarticulo>.descripcion
+{
+    display: block;
+}
+
+.articulos:hover
+{
+    display: block;
+    box-shadow: 0px 0px 10px #666;
+
+    
+}
+
+.iconos-pie:hover {
+    color: #666;
+}
 
 @media (min-width: 381px) 
 {
@@ -397,10 +418,12 @@ input[type=search] {
         box-shadow: 0px 0px 10px #666;
     }
 
-    .articulos:hover>.camion-container
+    .articulos:hover
     {
-        transform: rotate(-90deg);
+        box-shadow: 0px 0px 10px #0022AA;
     }
+
+
 
     .logo {
         width: 33%;
@@ -464,6 +487,7 @@ input[type=search] {
         width: 50%;
         padding-right: 4%;
     }
+   
 }
 
 
